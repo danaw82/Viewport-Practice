@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  Dana Wildy Coding Bootcamp 2024 Module 8.3 Media Queries 04/14/2024
+  <!--Assignment is to practice setting up media queries that change the screen color depending on the size it is.. 
+  -->
+  <!-- 
+TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>Media Query</title>
+    <style>
+      /* Changing the Background color to light salmon for Mobile Devices. */
+      @media (min-width: 319px) and (max-width: 480px) {
+        body {
+          background-color: lightsalmon;
+        }
+      }
+      /* Changing the Background color to powder blue for IPADS and Tablets.*/
+      @media (min-width: 481px) and (max-width: 1200px) {
+        body {
+          background-color: powderblue;
+        }
+      }
+      /* Changing the Background color to lime green for Laptops.*/
+      @media (min-width: 1201px) and (max-width: 1600px) {
+        body {
+          background-color: limegreen;
+        }
+      }
+
+      /* Changing the Background color to sea green for Desktops.*/
+      @media (min-width: 1601px) {
+        body {
+          background-color: seagreen;
+        }
+      }
+    </style>
+  </head>
+
+  <body></body>
+</html>
